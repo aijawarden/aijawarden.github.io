@@ -1,1 +1,142 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/0acc59fded.js"></script>
+    <link href="./index_styles.css" type="text/css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+</head>
+<body>
+    
+    <div class="topnav" id="myTopnav">
+        <img class="Logo" src="emptylogo.PNG" width="80px" align="left" style="padding-right:10px;"/>
+        <a href="index.html" class="active">HOME</a>
+        <a href="#">ABOUT US</a> 
+        <a href="#">CONTACT US</a>
+        <div class="topnav-right">
+            <img class="glass-img" src="Magnifying-glass.png" align="LEFT" width="20px" style="padding-top:15px;"/>
+            <a href="#">LOGIN/REGISTER</a>
+          </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+
+    <div id="first-section">
+        <h2>HomeFax</h2>
+        <h3>A NEW WAY TO DISCOVER YOUR HOME!</h3>
+        <img class="houseinhands-img" src="houseinhand.PNG"/>
+        <button onclick="document.location='search.html'" class="button button1">SEARCH FOR APARTMENTS/CONDOS</button>
+        <button onclick="document.location='search.html'" class="button button2">SEARCH FOR HOUSES</button>
+    </div>
+
+    <div id="second-section">
+        <div class="inner">
+            <img src="whatwedo.jpg" align="LEFT" class="imgresponsive"/>
+            <div class="bordertext">
+                <h2>WHAT WE DO</h2><p style="font-size:1.35vw;">We aim to provide you with the information you need while considering a home to rent/buy.
+                As a buyer or renter, our extensive review process allows for you to receive the most updated information about the property. As the property owner or 
+            manager, we compile all of the important information about your home in one place, such as paint colors, appliances and date of past repairs. This is 
+        so that you can stay informed about your home if you need to repair, renovate or update anything. <br> <br> Your privacy is our concern! We only show houses that 
+    are currenly on the market. Other houses on our site are only viewable by the current owner/primary resident. Hidden properties can only be view through an account and 
+    approved paperwork to show that you have permission to view the properties details. <br><br> Our company aims to stay away from influencing your judgement by including the price 
+in our rating system for the properties. This is to ensure that you are getting the information and decided for yourself whether it is worth the price based on the merit of the home. </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="third-section">
+        <h2>HOW IT WORKS</h2>
+        <div class="toprow">
+	        <a href="#" class="sixth edit">
+	            <img src="culdesac.PNG" class="segmentsresponsive"/>
+		        <h3>UPLOAD/EDIT A PROPERTY</h3>
+                <p>To upload or edit a property, you will need to log in and make sure you have permission to do so. We may ask for proof if you are uploading a
+                    new property or makeing an edit.
+                </p>
+		    </a>
+		    <a href="search.html" class="sixth search">
+		        <img src="apartments.PNG" class="segmentsresponsive"/>
+	            <h3>SEARCH FOR PROPERTIES</h3>
+                <p>You can search for properties without an account. However, keep in mind only properites on the market can be viewed by the public.</p>
+	        </a>
+	        <a href="#" class="sixth register">
+		        <img src="roofs.PNG" class="segmentsresponsive"/>
+	            <h3>NEW OWNER REGISTRATION</h3>
+                <p>If you are a new owner to a house on our site, we will ask you to submit the proper paperwork in order to transfer the account. After it is processed, you can 
+                 make edits to your property.
+                </p>
+		      </a>
+	    </div>
+		
+    </div>
+    <div id="fourth-section">
+        <h2>RATING SYSTEM</h2>
+        <div class="toprow">
+	        <a class="fourth one">
+	            <img src="oldhomes.PNG" class="oneresponsive"/>
+		        <h3>1. HOME REPAIRS/PERMIT INFORMATION</h3>
+                <p>In order to have a complete profile of the property, our company utilizes permit information as well as information given to us 
+                    from the owner. 
+                </p>
+		    </a>
+		    <a class="fourth two">
+		        <img src="curvedstreet.PNG" class="segmentsresponsive"/>
+	            <h3>2. HOME INSURANCE</h3>
+                <p>We work closely with home insurance companies to ensure that if needed, we can quickly receive information about the property.</p>
+	        </a>
+	        <a class="fourth three">
+		        <img src="apartments.PNG" class="segmentsresponsive"/>
+	            <h3>3. COMPANY PARTNERSHIP</h3>
+                <p>We partner with repair and property companies in each area so that we can get the updated information as fast as possible. This also ensures that 
+                    we are getting accurate and up to date information about the properties.
+                </p>
+		      </a>
+	    </div>
+    </div>
+
+    <div id="fifth-section">
+        <div class="inner">
+            <img src="contactus.jpg" align="RIGHT" class="imgresponsive"/>
+            <div class="bordertext">
+                <h2>CONTACT US</h2>
+                <div class="address">
+                    <h3> MAILING ADDRESS </h3>
+                    <p> 123 Anywhere St., Any City, State, Country 12345 </p>
+                </div>
+                <div class="email">
+                    <h3> EMAIL ADDRESS </h3>
+                    <p> hello@reallygreatsite.com </p>
+                </div>
+                <div class="phone">
+                    <h3> PHONE NUMBER </h3>
+                    <p> (123) 456 7890 </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        
+    </footer>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+
+</body>
+</html>
